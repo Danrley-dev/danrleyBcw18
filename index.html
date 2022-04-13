@@ -6,10 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap"
-        rel="stylesheet">
     <script src="js/action.js"></script>
     <title>Página de start BCW18</title>
 </head>
@@ -69,61 +65,122 @@
             </div>
 
         </div>
-        <div class="divisorBase" id="cadastro">
+        <div class="row" id="dicas">
+            <div class="leftColumn">
+                <div class="card">
+                    <h2>MERCADO DE TECNOLOGIA</h2>
+                    <h5>Profissional desejado, abril 13, 2022</h5>
+                    <div class="img" style="height:200px; background-image:url(img/1)">
+                        <p>O que é desejado no mercado?</p>
+                        <p> 
+                            De acordo com a ultima pesquisa de empregabilidade do IPCA, o profissional de segurança
+                            digital e de
+                            soluções para métricas de dados são os mais procurados no mercado atual. No fim de 2021 com
+                            a chegada das
+                            vacinas uma pesquisa encomendada pela revista Exame mostra que profissionais de dados e
+                            segurança são os mais
+                            procurados na recuperação pós pandemia.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>TECNOLOGIA E DEMANDA</h2>
+                    <h5>Desenvolvedor web, abril 10, 2022</h5>
+                    <div class="img" style="height:200px; background-image:url(img/2.png)"></div>
+                    <p>NODE JS X cloud function</p>
+                    <p>
+                         As tecnologias de back-end são diversas dependendo da demanda dos clientes, mas os profissionais
+                        que desejam
+                        ir para um mercado na América do Norte ou na Europa as tecnologias de Cloud com Runtime estão em
+                        forte ascenção,
+                        no ínicio desta década com a fortificação da computação de nuvens os sistemas de Deploy por
+                        repositório a tendência
+                        será estudarmos mais tecnologias que vão rodar nossas regras de negócios com serviços de nuvens.
+                    </p>
+                </div>
+            </div>
+            <div class="rightColumn">
+                <div class="card">
+                    <h2>Bootcamp 18</h2>
+                    <div class="img" style="height: 100px; ;background-image: url(img/3.png);"></div>
+                    <p> O que é um dev Full Stack Web? </p>
+                </div>
+                <div class="card">
+                    <h3>Java Spring</h3>
+                    <div class="img"> <p>Hibernate</p> </div>
+                    <div class="img"> <p>Spring Boot</p> </div>
+                    <div class="img"> <p>MVC</p> </div>
+                </div>
+                <div class="card">
+                    <h3>Siga-me...</h3>
+                    <p>Linkedin.com/SoulCodeAcademy</p>
+                </div>
+            </div>
+        </div>
+        <div class="formContainer" id="cadastro">
             <form action="#" method="">
                 <div>
                     <input type="hidden" id="id">
                 </div>
-                <div>
-                    <label for="nome">Nome: </label>
-                    <input type="text" id="nome" placeholder="Digite seu nome">
+                <div class="formRow">
+                    <div class="col-20"> <label for="nome">Nome: </label> </div>
+                    <div class="col-70"> <input type="text" id="nome" placeholder="Digite seu nome"> </div>
                 </div>
 
-                <div>
-                    <label for="email"> Email: </label>
-                    <input type="text" id="email" placeholder="Digite seu email">
+                <div class="formRow">
+                    <div class="col-20"> <label for="email"> Email: </label> </div>
+                    <div class="col-70"> <input type="text" id="email" placeholder="Digite seu email"> </div>
                 </div>
-                <div>
-                    <label for="nascimento">Data de nascimento: </label>
-                    <input type="date" id="nascimento">
+                <div class="formRow">
+                    <div class="col-20"> <label for="nascimento">Data de nascimento: </label> </div>
+                    <div class="col-70"> <input type="date" id="nascimento"> </div>
                 </div>
-                <div>
-                    <input type="checkbox" id="deficiencia">
-                    <label for="">Deficiência</label>
+                <div class="formRow">
+                    <div class="col-20"> <label for="">Deficiência: </label> </div>
+                    <div class="col-70"> <input type="checkbox" id="deficiencia"> </div>
                 </div>
-                <div>
-                    <label for="senha">Senha: </label>
-                    <input type="password" id="senha" placeholder="Digite a senha">
+                <div class="formRow">
+                    <div class="col-20"> <label for="senha">Senha: </label> </div>
+                    <div class="col-70"> <input type="password" id="senha" placeholder="Digite a senha"> </div>
                 </div>
-                <div>
-                    <label for="educacao">Nível escolar: </label> <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="f1"> Fundamental <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="m1"> Médio <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="b1"> Bacharel <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="t1"> Tecnólogo <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="l1"> Licenciado <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="p1"> Pós graduado <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="m1"> Mestrado <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="d1"> Doutorado <br>
+                <div class="formRow">
+                    <div class="col-20"> <label for="escolaridade">Nivel escolar: </label></div>
+                    <div class="col-70">
+                        <input type="radio" name="escolaridade" id="escolaridade" value="f1"> Fundamental <br>
+                        <input type="radio" name="escolaridade" id="escolaridade" value="m1"> Médio <br>
+                        <input type="radio" name="escolaridade" id="escolaridade" value="b1"> Bacharel <br>
+                        <input type="radio" name="escolaridade" id="escolaridade" value="t1"> Tecnólogo <br>
+                        <input type="radio" name="escolaridade" id="escolaridade" value="l1"> Licenciado <br>
+                        <input type="radio" name="escolaridade" id="escolaridade" value="p1"> Pós graduado <br>
+                        <input type="radio" name="escolaridade" id="escolaridade" value="m1"> Mestrado <br>
+                        <input type="radio" name="escolaridade" id="escolaridade" value="d1"> Doutorado <br>
+                    </div>
                 </div>
-                <div>
-                    <label for="experiencia">Qual foi a sua experiência com programação: </label>
-                    <input type="range" id="experiencia" min="10" max="100">
+                <div class="formRow">
+                    <div class="col-20"><label for="experiencia">Qual foi sua experiência com programação:</label></div>
+                    <div class="col-70">
+                        <input type="range" id="experiencia" min="5" max="50" oninput="display.value=value"
+                            onchange="display.value=value">
+                        <input type="text" id="display" value="0" oninput="experiencia.value=value"
+                            onchange="experiencia.value=value" maxlength="3" size="3">
+                    </div>
                 </div>
-                <div>
-                    <label for="descricao">Descrição de experiência: </label> <br>
-                    <textarea id="descricao" cols="70" rows="5"
-                        placeholder="Escreva aqui as tecnologias em que ja trabalhou"></textarea>
+                <div class="fomRow">
+                    <div class="col-20"><label for="descricao">Descrição da Experiência: </label><br></div>
+                    <div class="col-70"><textarea id="descricao" cols="70" rows="5"
+                            placeholder="Digite as tecnologias em que ja trabalhou"></textarea></div>
                 </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </div>
+                <div class="formRow">
+                    <div class="col-70">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
             </form>
         </div>
     </main>
-    <footer>
-
+    <footer class="footer">
+        Direitos reservados da Soulcode Academy
+        Alameda Santos VIP cooworking 1117 Jardins São Paulo - SP
     </footer>
 </body>
 
