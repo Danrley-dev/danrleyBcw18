@@ -178,6 +178,24 @@ input[type=submit]:hover, input[type=reset]:hover{
     font-weight: 300;
 }
 
+.footerSocial{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+
+.footerSocial > div{
+    width: 70px;
+    margin: 10px;
+    text-align: center;
+    line-height: 27px;
+}
+
+.footerSocial img{
+    width: 50px;
+}
+
+
 @media screen and (max-width: 400px){
     .leftColumn, .rightColumn{
         width: 100%;
